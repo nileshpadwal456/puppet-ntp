@@ -56,9 +56,9 @@ class ntp(
  $service_hasstatus = $ntp::params::service_hasstatus,
 ) inherits ::ntp::params {
  
- class { '::ntp::install': }
- -> class { '::ntp::config': }
- ~> class { '::ntp::service': }
+ #class { '::ntp::install': }
+ #-> class { '::ntp::config': }
+# ~> class { '::ntp::service': }
 }
 
 
